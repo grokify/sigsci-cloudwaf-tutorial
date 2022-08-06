@@ -1,0 +1,42 @@
+{
+	"id": "deadbeef-6f03-45cc-a174-4e849e5d8804",
+	"name": "Test Cloud WAF Instance - Go SDK Test",
+	"description": "Test Cloud WAF Instance created at 2022-08-06T18:32:49Z",
+	"region": "us-west-1",
+	"tlsMinVersion": "1.2",
+	"workspaceConfigs": [
+		{
+			"siteName": "test-sandbox",
+			"instanceLocation": "advanced",
+			"clientIPHeader": "Fastly-Client-IP",
+			"listenerProtocols": [
+				"https"
+			],
+			"routes": [
+				{
+					"id": "deadbeef-6843-490f-b9b1-9b52c5a54a83",
+					"certificateIds": [],
+					"origin": "https://example.com",
+					"domains": [
+						"example.net"
+					],
+					"connectionPooling": true,
+					"passHostHeader": false,
+					"tlsHostOverride": true,
+					"tlsInsecureSkipVerify": false,
+					"trustProxyHeaders": false
+				}
+			]
+		}
+	],
+	"deployment": {
+		"status": "pending",
+		"message": "",
+		"egressIPs": null,
+		"dnsEntry": ""
+	},
+	"useUploadedCertificates": false,
+	"createdBy": "fastly@example.com",
+	"created": "2022-08-06T18:35:32Z",
+	"updatedBy": ""
+}

@@ -1,0 +1,42 @@
+{
+	"id": "deadbeef-6f03-45cc-a174-4e849e5d8804",
+	"name": "Test Cloud WAF Instance - Go SDK Test",
+	"description": "",
+	"region": "us-west-1",
+	"tlsMinVersion": "unknown_tls_min",
+	"workspaceConfigs": [
+		{
+			"siteName": "test-sandbox",
+			"instanceLocation": "advanced",
+			"clientIPHeader": "Fastly-Client-IP",
+			"listenerProtocols": [
+				"https"
+			],
+			"routes": [
+				{
+					"id": "deadbeef-6843-490f-b9b1-9b52c5a54a83",
+					"certificateIds": [],
+					"origin": "https://example.com",
+					"domains": [
+						"example.net"
+					],
+					"connectionPooling": true,
+					"passHostHeader": false,
+					"tlsHostOverride": true,
+					"tlsInsecureSkipVerify": false,
+					"trustProxyHeaders": false
+				}
+			]
+		}
+	],
+	"deployment": {
+		"status": "pending",
+		"message": "",
+		"egressIPs": null,
+		"dnsEntry": ""
+	},
+	"useUploadedCertificates": false,
+	"createdBy": "",
+	"created": "",
+	"updatedBy": ""
+}

@@ -1,0 +1,32 @@
+{
+	"name": "Test Cloud WAF Instance - Go SDK Test",
+	"description": "Test Cloud WAF Instance created at 2022-08-06T18:32:49Z",
+	"region": "us-west-1",
+	"tlsMinVersion": "1.2",
+	"useUploadedCertificates": false,
+	"workspaceConfigs": [
+		{
+			"siteName": "test-sandbox",
+			"instanceLocation": "advanced",
+			"clientIPHeader": "Fastly-Client-IP",
+			"listenerProtocols": [
+				"https"
+			],
+			"routes": [
+				{
+					"id": "",
+					"certificateIds": null,
+					"origin": "https://example.com",
+					"domains": [
+						"example.net"
+					],
+					"connectionPooling": true,
+					"passHostHeader": false,
+					"tlsHostOverride": true,
+					"tlsInsecureSkipVerify": false,
+					"trustProxyHeaders": false
+				}
+			]
+		}
+	]
+}

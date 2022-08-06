@@ -1,0 +1,123 @@
+{
+	"id": "deadbeef-6f03-45cc-a174-4e849e5d8804",
+	"name": "Test Cloud WAF Instance - Go SDK Test",
+	"description": "Test Cloud WAF Instance created at 2022-08-06T18:32:49Z",
+	"region": "us-west-1",
+	"tlsMinVersion": "1.2",
+	"workspaceConfigs": [
+		{
+			"siteName": "test-sandbox",
+			"instanceLocation": "advanced",
+			"clientIPHeader": "Fastly-Client-IP",
+			"listenerProtocols": [
+				"https"
+			],
+			"routes": [
+				{
+					"id": "deadbeef-6843-490f-b9b1-9b52c5a54a83",
+					"certificateIds": [],
+					"origin": "https://example.com",
+					"domains": [
+						"example.net"
+					],
+					"connectionPooling": true,
+					"passHostHeader": false,
+					"tlsHostOverride": true,
+					"tlsInsecureSkipVerify": false,
+					"trustProxyHeaders": false
+				}
+			]
+		}
+	],
+	"deployment": {
+		"status": "done",
+		"message": "",
+		"egressIPs": [
+			{
+				"ip": "256.0.0.1",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.2",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.3",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.4",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.5",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.6",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.7",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.8",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.9",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.10",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.11",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.12",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.13",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.14",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.15",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			},
+			{
+				"ip": "256.0.0.16",
+				"status": "reachable",
+				"updatedAt": "2022-08-06T18:37:53Z"
+			}
+		],
+		"dnsEntry": "deadbeef-6f03-45cc-a174-4e849e5d8804.sigscicloudwaf.com"
+	},
+	"useUploadedCertificates": false,
+	"createdBy": "fastly@example.com",
+	"created": "2022-08-06T18:35:32Z",
+	"updatedBy": ""
+}
